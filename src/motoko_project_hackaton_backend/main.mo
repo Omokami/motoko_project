@@ -43,6 +43,7 @@ actor {
   };
 
   public query func getFinalSamples() : async [Sample] {
+    Debug.print(debug_show(final_sample));
     return final_sample;
   };
 
@@ -54,6 +55,7 @@ actor {
 
   public func addFinalSample(sampleToAdd : Sample) : async Sample {
     final_sample := Array.append<Sample>(final_sample, [sampleToAdd]);
+    Debug.print(debug_show(final_sample));
     return sampleToAdd;
   }
 };

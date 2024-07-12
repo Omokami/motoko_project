@@ -8,10 +8,10 @@ const SampleRecord = ({data}) => {
             <div className="text-gray-700">
                 <p><strong>Date and Time:</strong> {dateTime}</p>
                 <p><strong>TDS:</strong> {String(tds)}</p>
-                <p><strong>Temperature:</strong> {temperature}</p>
+                <p><strong>Temperature:</strong> {temperature}° C</p>
                 <p><strong>pH:</strong> {pH}</p>
-                <p><strong>Turbidity:</strong> {String(turbidity)}</p>
-                <p><strong>Quantity:</strong> {quantity}</p>
+                <p><strong>Turbidity:</strong> {String(turbidity)} NTU</p>
+                <p><strong>Quantity:</strong> {quantity} L.</p>
             </div>
         </div>
     )
