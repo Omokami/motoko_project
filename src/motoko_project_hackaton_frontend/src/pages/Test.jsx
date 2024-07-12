@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Alert from '../components/Alert';
-import { useAuth, useRestActor } from '@bundly/ares-react';
+import { useAuth } from '@bundly/ares-react';
 import Spinner from '../components/Spinner';
 import CardTest from '../components/CardTest';
 import { motoko_project_hackaton_backend } from 'declarations/motoko_project_hackaton_backend';

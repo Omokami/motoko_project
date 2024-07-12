@@ -6,7 +6,7 @@ const CardTest = ({color, data, title}) => {
 
     return (
         <div className={`mt-4 bg-white p-4 rounded-lg shadow-lg border border-${color}-800`}>
-            <h2 className="text-xl font-bold text-blue-800 mb-2">{title}</h2>
+            <h2 className={`text-xl font-bold text-${color}-800 mb-2`}>{title}</h2>
             <div className="text-gray-700">
                 <p><strong>Date and Time:</strong> {new Date(initialTestData.dateTime).toLocaleString()}</p>
                 <p><strong>TDS:</strong> {String(tds)}</p>
